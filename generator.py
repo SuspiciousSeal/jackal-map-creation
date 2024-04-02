@@ -17,7 +17,7 @@ def main():
       while param_counter < set_size:
         print('_________________________________________________________')
         print('world', total_counter, 'fill_pct', fill_pct, 'smooths', smooths)
-        result = gen_world_ca.main(total_counter, hash(datetime.datetime.now()), smooths, fill_pct, show_metrics=0)
+        result = gen_world_ca.main(total_counter, hash(datetime.datetime.now()), smooths, fill_pct, show_metrics=0, rows=15, cols=15)
         if result: # worlds with no path are not counted or used
           param_counter += 1
           total_counter += 1
